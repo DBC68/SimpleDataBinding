@@ -1,9 +1,7 @@
 # SimpleDataBinding
-Simple iOS Data Binding via NSNotificationCenter
-
 This project demonstrates simple iOS data binding using NSNotifications.  
 
-Included is the category NSObject+DataBinding that includes the following methods:
+Included is the category <b>NSObject+DataBinding</b> that includes the following methods:
 
 <b>\-(void)registerForDataBindingNotification</b>
 
