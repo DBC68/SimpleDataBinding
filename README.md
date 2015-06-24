@@ -3,10 +3,14 @@ This project demonstrates simple iOS data binding using NSNotifications.
 
 Included is the category <b>NSObject+DataBinding</b> that includes the following methods:
 
+
+
+
 <b>\-(void)registerForDataBindingNotification</b>
 
-Add this method to register for data binding notifications in the class
-where you want to observe property changes
+Add this method to register for data binding notifications in the class where you want to observe property changes.
+
+
 
 
 <b>\-(void)newValue:(id)value forObject:(id)object</b>
@@ -14,6 +18,8 @@ where you want to observe property changes
 Add this method to the setters of properties you want to observe.
  - value is the new value of the property
  - object should be set to self
+
+
 
 
 <b>\-(void)propertyChanged:(NSNotification *)notification</b>
