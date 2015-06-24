@@ -7,21 +7,46 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
+
+@property (nonatomic) Person *per1;
+@property (nonatomic) Person *per2;
 
 @end
 
 @implementation ViewController
 
+//-------------------------------------------------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self registerForDataBindingNotification];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//-------------------------------------------------------------------------
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.per1 = [Person new];
+    self.per2 = [Person new];
+    
+    self.per1.name = @"David";
+    self.per2.age = 42;
+
+}
+
+//-------------------------------------------------------------------------
+- (void)propertyChanged:(NSNotification *)notification
+{
+    NSDictionary *dict = notification.userInfo;
+    
+    if([dict[kDataBindingObjectKey] isEqual:self.per2]) {
+        
+        NSLog(@"%@'s %@ was changed to %@.", dict[kDataBindingObjectKey], dict[kDataBindingPropertyKey], dict[kDataBindingValueKey]);
+    }
 }
 
 @end

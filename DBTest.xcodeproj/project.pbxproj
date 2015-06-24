@@ -14,6 +14,9 @@
 		9C17876A1B3B0B90002681A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1787691B3B0B90002681A5 /* Images.xcassets */; };
 		9C17876D1B3B0B90002681A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C17876B1B3B0B90002681A5 /* LaunchScreen.xib */; };
 		9C1787791B3B0B90002681A5 /* DBTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1787781B3B0B90002681A5 /* DBTestTests.m */; };
+		9C1787841B3B0BA5002681A5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1787831B3B0BA5002681A5 /* Person.m */; };
+		9C1787871B3B1D8C002681A5 /* NSObject+DataBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1787861B3B1D8C002681A5 /* NSObject+DataBinding.m */; };
+		9C1787891B3B2546002681A5 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1787881B3B2546002681A5 /* libobjc.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		9C1787721B3B0B90002681A5 /* DBTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1787771B3B0B90002681A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1787781B3B0B90002681A5 /* DBTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTestTests.m; sourceTree = "<group>"; };
+		9C1787821B3B0BA5002681A5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9C1787831B3B0BA5002681A5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9C1787851B3B1D8C002681A5 /* NSObject+DataBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataBinding.h"; sourceTree = "<group>"; };
+		9C1787861B3B1D8C002681A5 /* NSObject+DataBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataBinding.m"; sourceTree = "<group>"; };
+		9C1787881B3B2546002681A5 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1787891B3B2546002681A5 /* libobjc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		9C1787501B3B0B8F002681A5 = {
 			isa = PBXGroup;
 			children = (
+				9C1787881B3B2546002681A5 /* libobjc.dylib */,
 				9C17875B1B3B0B8F002681A5 /* DBTest */,
 				9C1787751B3B0B90002681A5 /* DBTestTests */,
 				9C17875A1B3B0B8F002681A5 /* Products */,
@@ -89,6 +99,10 @@
 				9C1787691B3B0B90002681A5 /* Images.xcassets */,
 				9C17876B1B3B0B90002681A5 /* LaunchScreen.xib */,
 				9C17875C1B3B0B8F002681A5 /* Supporting Files */,
+				9C1787821B3B0BA5002681A5 /* Person.h */,
+				9C1787831B3B0BA5002681A5 /* Person.m */,
+				9C1787851B3B1D8C002681A5 /* NSObject+DataBinding.h */,
+				9C1787861B3B1D8C002681A5 /* NSObject+DataBinding.m */,
 			);
 			path = DBTest;
 			sourceTree = "<group>";
@@ -221,7 +235,9 @@
 			files = (
 				9C1787651B3B0B90002681A5 /* ViewController.m in Sources */,
 				9C1787621B3B0B8F002681A5 /* AppDelegate.m in Sources */,
+				9C1787841B3B0BA5002681A5 /* Person.m in Sources */,
 				9C17875F1B3B0B8F002681A5 /* main.m in Sources */,
+				9C1787871B3B1D8C002681A5 /* NSObject+DataBinding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
